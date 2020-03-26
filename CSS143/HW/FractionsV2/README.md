@@ -1,4 +1,5 @@
 Summary
+
 Build two classes (Fraction and FractionCounter) and a Driver for use in counting the number of unique fractions read from a text file.   We’ll also reuse the ObjectList class we built in lab to store our list of unique FractionCounters, instead of directly using arrays or the ArrayList. Rather than designing a monolithic chunk of code in main like we did in the previous homework, we’ll practice distributing our code into containers (called classes) that you will design specifically to tackle this same problem in a different and more logically organized fashion.
 
 Remember
@@ -6,6 +7,7 @@ Remember
 NO DECIMALS!
 Handle input of any length
 Introduction
+
 Your project is to read in a series of fractions from a text file, which will have each line formatted as follows:   “A/B”.  A sample text file is listed below, and the purpose of your program is to read in one line at a time and build a Fraction object from A and B.  For each unique Fraction seen, your program will create a FractionCounter object used to track the number of occurrences of that specific fraction.  When all the input is consumed, your program will print out its ObjectList of unique FractionCounters, which should report the fraction and its count – see output below. You can assume no blank lines or misleading characters; see the text file link above for the some of the input I’ll use when testing your submission. Your program must reduce fractions, as demonstrated in the output below.
 
 Sample text file input:
@@ -23,10 +25,13 @@ Sample output:
 7/3 has a count of 1
 
 Building Multiple Classes
+
 Class Fraction
+
 This class should be a simple abstraction (i.e., a small class) that represents the ratio of two numbers.  There will be only two data elements, and only a few methods.  Note that it is required for your Fraction class to store your ratio in reduced form, so this is feature to implement in your software.
 
 Data Members
+
 The numerator – what primitive type makes the most sense here?
 The denominator – same type as the numerator.
 Method Members
@@ -41,10 +46,13 @@ getNumerator()
 setNumerator(…)
 getDenominator()
 setDenominator(…)
+
 Class FractionCounter
+
 This class should also be small, and contain only a few state variables.  The purpose of this class is to store a reference to a Fraction object and a count of how many times this fraction object has been seen in the input file.
 
 Data Members
+
 The Fraction – declare this class variable to be of type Fraction from above
 The counter – the integer value used to count the number of these fractions seen
 Method Members
@@ -60,6 +68,7 @@ Before submitting your assignment, be sure to thoroughly test it – for example
 NB:  You need to code your program it so it can run with input files besides the example one. In particular, it has to work with input files that are of any length.  You must enable the appropriate lists to dynamically resize.
 
 Hints (& Spoilers)
+
 Test your code as you add features (either methods or data) incrementally, making sure your small change works as you envisioned it to.
 Try to keep in mind OO principles; for example, to promote information hiding, we should probably make all of our data members private for each class.
 Consider reading one line at a time (with the Scanner nextLine() method), and using the split (Links to an external site.) function (defined in class String) to give you an array with two elements in it (the numerator and denominator, respectively)
