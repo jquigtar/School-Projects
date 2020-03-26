@@ -1,0 +1,7 @@
+total 24
+drwxrwxr-x. 2 jquigtar jquigtar  105 Oct 16 21:09 .
+drwxrwxr-x. 4 jquigtar jquigtar   42 Oct 16 19:41 ..
+-rw-r--r--. 1 jquigtar jquigtar 3734 Oct 16 19:41 assignment2.cpp
+-rw-rw-r--. 1 jquigtar jquigtar    0 Oct 16 21:09 output.txt
+-rw-r--r--. 1 jquigtar jquigtar 9877 Oct 16 19:41 timespan.cpp
+-rw-r--r--. 1 jquigtar jquigtar 8166 Oct 16 19:41 timespan.h
